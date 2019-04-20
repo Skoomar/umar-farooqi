@@ -1,0 +1,20 @@
+#container {
+    width: 500px;
+    margin: fill;
+}
+
+#first {
+    width: fit-content;
+    float: left;
+    height: fit-content;
+}
+
+#second {
+    width: 100px;
+    float: right;
+    height: fit-content;
+}
+
+#clear {
+    clear: both;
+}
