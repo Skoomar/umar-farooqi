@@ -1,0 +1,27 @@
+{
+  "name": "ufwebsite",
+  "version": "1.0.0",
+  "description": "Umar Farooqi website",
+  "main": "snake.js",
+  "dependencies": {
+    "jquery": "^3.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skoomar/UF.git"
+  },
+  "keywords": [
+    "Umar",
+    "Farooqi"
+  ],
+  "author": "Umar Farooqi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Skoomar/UF/issues"
+  },
+  "homepage": "https://github.com/Skoomar/UF#readme"
+}
