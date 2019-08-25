@@ -53,6 +53,7 @@ document.addEventListener("touchcancel", changeDirection);
  */
 function main() {
     if (didGameEnd()) {
+        drawEndgame();
         gameEnded = true;
         return;
     }
@@ -127,7 +128,7 @@ function drawSnakePart(snakePart) {
 }
 
 /**
- * Modulus function because JavaScript's % is bullshit
+ * Modulus function because JavaScript's % is bullshit by itself
  */
 function mod(n, m) {
     return ((n % m) + m) % m;
@@ -221,6 +222,16 @@ function drawFood() {
     ctx.strokeStyle = FOOD_BORDER_COLOUR;
     ctx.fillRect(foodX, foodY, 10, 10);
     ctx.strokeRect(foodX, foodY, 10, 10);
+}
+
+
+function drawEndgame() {
+    ctx.font = "20px Arial";
+    ctx.fillStyle = "black";
+    //ctx.textAlign = "center";
+    //ctx.fillText("ey", 10, 50);
+    //ctx.fillText("lol", 10, 70)
+    ctx.fillText("Game Ended\nScore: " + score, 10, 50);
 }
 
 /**
