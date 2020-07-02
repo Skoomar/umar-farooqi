@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/UFsite.iml" filepath="$PROJECT_DIR$/.idea/UFsite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/umar-web.iml" filepath="$PROJECT_DIR$/.idea/umar-web.iml" />
     </modules>
   </component>
 </project>
