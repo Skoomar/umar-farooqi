@@ -1,7 +1,7 @@
 name: umar-farooqi
 run-name: ${{ github.actor }} has a personal website
 on: [push]
-job:
+jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
