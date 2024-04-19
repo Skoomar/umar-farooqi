@@ -1,6 +1,6 @@
 # To Do
 
-- add a component library - probs MUI
+- add a component library - ~~probs MUI~~ went with Chakra instead
 - use styled-components instead of this css shite
 - do i need node/express on the back?
 - navbar
