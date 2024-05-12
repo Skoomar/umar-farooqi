@@ -1,7 +1,7 @@
 # To Do
 
 - add a component library - ~~probs MUI~~ went with Chakra instead
-- use styled-components instead of this css shite
+- use styled-components or tailwind instead of this css shite
 - do i need node/express on the back?
 - navbar
 - portfolio/about me
