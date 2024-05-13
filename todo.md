@@ -8,3 +8,6 @@
 - projects? lol wat
 - music?
 - contact details
+
+
+- where do you put ThemeProviders in a NextJS project?

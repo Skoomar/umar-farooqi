@@ -1,6 +1,6 @@
 'use client'
 
-import {IconButton, Menu, MenuButton, MenuItem, MenuList} from "@chakra-ui/react";
+import {IconButton, Menu, MenuButton, MenuDivider, MenuItem, MenuList} from "@chakra-ui/react";
 import {HamburgerIcon} from "@chakra-ui/icons";
 
 const NavMenu = () => (
@@ -12,15 +12,19 @@ const NavMenu = () => (
             variant="outline"
         />
         <MenuList>
+            <MenuDivider />
             <MenuItem>
                 Home
             </MenuItem>
+            <MenuDivider />
             <MenuItem>
                 Projects
             </MenuItem>
+            <MenuDivider />
             <MenuItem>
                 Contact Me
             </MenuItem>
+            <MenuDivider />
         </MenuList>
     </Menu>
 );
