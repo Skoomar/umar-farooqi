@@ -1,5 +1,5 @@
-import Image from "next/image";
 import NavMenu from "@/components/NavMenu/NavMenu";
+import { Link } from "@chakra-ui/next-js";
 
 export default function Home() {
     return (
