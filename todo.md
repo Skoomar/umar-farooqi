@@ -1,7 +1,6 @@
 # To Do
 
-- add a component library - ~~probs MUI~~ went with Chakra instead
-- use styled-components or tailwind instead of this css shite
+- how to get this dark mode thing working with Next 13+
 - do i need node/express on the back?
 - navbar
 - portfolio/about me
@@ -10,4 +9,8 @@
 - contact details
 
 
-- where do you put ThemeProviders in a NextJS project?
+
+# Done
+- where do you put ThemeProviders in a NextJS project? - just bodge it in the layout.tsx apparently
+- use styled-components or tailwind instead of this css shite
+- add a component library - ~~probs MUI~~ went with Chakra instead
