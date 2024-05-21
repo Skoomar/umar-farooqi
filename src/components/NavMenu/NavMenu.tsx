@@ -1,9 +1,18 @@
-'use client'
-
-import { HamburgerIcon } from "@chakra-ui/icons";
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuLabel,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu";
 
 const NavMenu = () => (
-    <div></div>
+    <div>
+        <DropdownMenu>
+            <DropdownMenuTrigger></DropdownMenuTrigger>
+        </DropdownMenu>
+    </div>
 );
 
 export default NavMenu;
