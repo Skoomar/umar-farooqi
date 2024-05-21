@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import { fonts } from "./fonts";
+import { Inter as FontSans } from 'next/font/google';
 import "../input.css";
-import { Providers } from "@/app/providers";
-import { ColorModeScript } from "@chakra-ui/react";
-import theme from "@/theme";
+import { cn } from "@/lib/utils";
 
+const fontSans = FontSans({
+    subsets: ['latin'],
+    variable: "--font-sans",
+})
 
 export const metadata: Metadata = {
     title: "Umar Farooqi",
@@ -13,10 +15,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
-        <html lang="en" className={fonts.inter.className}>
-            <body >
-                <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-                <Providers>{children}</Providers>
+        <html lang="en" className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
+            <body>
+                {children}
             </body>
         </html>
     );

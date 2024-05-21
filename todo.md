@@ -13,4 +13,4 @@
 # Done
 - where do you put ThemeProviders in a NextJS project? - just bodge it in the layout.tsx apparently
 - use styled-components or tailwind instead of this css shite
-- add a component library - ~~probs MUI~~ went with Chakra instead
+- add a component library - ~~probs MUI~~ -went with Chakra instead- ACTUALLY WE GOING with shadcn now
