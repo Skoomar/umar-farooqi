@@ -6,6 +6,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
+import { LuMenu } from "react-icons/lu";
 
 const NavMenu = () => (
     <div>
