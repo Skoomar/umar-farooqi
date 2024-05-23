@@ -1,6 +1,7 @@
 # To Do
 
-- how to get this dark mode thing working with Next 13+
+- dark mode rendering differently on client vs server
+
 - do i need node/express on the back?
 - navbar
 - portfolio/about me

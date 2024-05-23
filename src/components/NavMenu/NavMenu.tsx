@@ -1,3 +1,5 @@
+import { LuMenu } from "react-icons/lu";
+
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -6,13 +8,20 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
-import { LuMenu } from "react-icons/lu";
+
+import LightDarkToggle from "@/components/NavMenu/LightDarkToggle";
+// import { Button } from "@/components/ui/button";
 
 const NavMenu = () => (
     <div>
         <DropdownMenu>
-            <DropdownMenuTrigger></DropdownMenuTrigger>
+            <DropdownMenuTrigger>
+                {/*<Button variant="outline">*/}
+                    <LuMenu/>
+                {/*</Button>*/}
+            </DropdownMenuTrigger>
         </DropdownMenu>
+        <LightDarkToggle />
     </div>
 );
 

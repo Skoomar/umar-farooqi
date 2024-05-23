@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from 'next/font/google';
 import "../input.css";
 import { cn } from "@/lib/utils";
+import { ThemeProvider } from "@/theme-provider";
 
 const fontSans = FontSans({
     subsets: ['latin'],
     variable: "--font-sans",
-})
+});
 
 export const metadata: Metadata = {
     title: "Umar Farooqi",
@@ -17,7 +18,14 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     return (
         <html lang="en" className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
             <body>
-                {children}
+                <ThemeProvider
+                    attribute="class"
+                    defaultTheme="system"
+                    enableSystem
+                    disableTransitionOnChange
+                >
+                    {children}
+                </ThemeProvider>
             </body>
         </html>
     );
