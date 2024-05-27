@@ -21,8 +21,9 @@ const NavMenu = () => (
                 </div>
             </SheetContent>
         </Sheet>
-        <nav className="m-auto hidden lg:flex gap-8 font-bold">
-            <Link href="/">Home</Link>
+        {/* TODO: probably a better way to do the margins between menu items/icons than setting margin between them */}
+        <nav className="ml-auto mr-14 hidden lg:flex items-center gap-14 font-bold">
+            <Link href="/" className="align-text-bottom">Home</Link>
             <Link href="/portfolio">Portfolio</Link>
         </nav>
         <LightDarkToggle />
