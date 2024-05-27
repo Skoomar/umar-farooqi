@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const NavMenu = () => (
-    <div className="flex justify-between pt-4 px-8">
+    <div className="flex justify-between py-4 px-8">
         <Sheet>
             <SheetTrigger asChild>
                 <Button className="lg:hidden" variant="outline" size="icon">
@@ -23,8 +23,12 @@ const NavMenu = () => (
         </Sheet>
         {/* TODO: probably a better way to do the margins between menu items/icons than setting margin between them */}
         <nav className="ml-auto mr-14 hidden lg:flex items-center gap-14 font-bold">
-            <Link href="/" className="align-text-bottom">Home</Link>
-            <Link href="/portfolio">Portfolio</Link>
+            <Button asChild variant="ghost" className="bg-amber-200">
+                <Link href="/">Home</Link>
+            </Button>
+            <Button asChild variant="ghost">
+                <Link href="/portfolio">Portfolio</Link>
+            </Button>
         </nav>
         <LightDarkToggle />
     </div>
