@@ -22,8 +22,9 @@ const NavMenu = () => (
             </SheetContent>
         </Sheet>
         {/* TODO: probably a better way to do the margins between menu items/icons than setting margin between them */}
+        <p>Logo</p>
         <nav className="ml-auto mr-14 hidden lg:flex items-center gap-14 font-bold">
-            <Button asChild variant="ghost" className="bg-amber-200">
+            <Button asChild variant="ghost">
                 <Link href="/">Home</Link>
             </Button>
             <Button asChild variant="ghost">
