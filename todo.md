@@ -1,6 +1,7 @@
 # To Do
 
 - implement scroll hijacking thing with fullPage.js (parallax extension maybe) - make sure it works with Next & React tho
+  - or this guy's tutorial to do it with simple code https://www.youtube.com/watch?v=hnbOIVBREUM
 - scroll down to next section should have a selection of images to look through
 
 - do i need node/express on the back?

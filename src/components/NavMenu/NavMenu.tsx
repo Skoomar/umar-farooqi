@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { LuMenu } from "react-icons/lu";
 
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -7,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 const NavMenu = () => (
-    <div className="flex justify-between py-3 px-8">
+    <div className="bg-primary-foreground z-10 fixed w-screen flex justify-between py-2 px-8">
         <Sheet>
             <SheetTrigger asChild>
                 <Button className="lg:hidden" variant="outline" size="icon">
@@ -23,8 +24,9 @@ const NavMenu = () => (
                 </div>
             </SheetContent>
         </Sheet>
+        {/* TODO: Make this logo work with dark mode IF i end up sticking with it */}
+        <Image src="/logo.svg" width={50} height={50} alt="Logo" />
         {/* TODO: probably a better way to do the margins between menu items/icons than setting margin between them */}
-        <p>Logo</p>
         <nav className="ml-auto mr-14 hidden lg:flex items-center gap-14 font-bold">
             <Button asChild variant="ghost">
                 <Link href="/">Home</Link>
