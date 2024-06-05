@@ -3,6 +3,7 @@ import { Inter as FontSans } from 'next/font/google';
 import "../input.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/theme-provider";
+import NavMenu from "@/components/NavMenu/NavMenu";
 
 const fontSans = FontSans({
     subsets: ['latin'],
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                     disableTransitionOnChange
                 >
                     {/* TODO: should <NavMenu> be in here?*/}
+                    <NavMenu />
                     {children}
                 </ThemeProvider>
             </body>
