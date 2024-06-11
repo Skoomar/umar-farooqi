@@ -30,9 +30,10 @@ const LightDarkToggle = () => {
                 <DropdownMenuItem onClick={() => setTheme("dark")}>
                     Dark
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setTheme("system")}>
-                    System
-                </DropdownMenuItem>
+                {/* TODO: Remove this if you end up not needing it */}
+                {/*<DropdownMenuItem onClick={() => setTheme("system")}>*/}
+                {/*    System*/}
+                {/*</DropdownMenuItem>*/}
             </DropdownMenuContent>
         </DropdownMenu>
     )

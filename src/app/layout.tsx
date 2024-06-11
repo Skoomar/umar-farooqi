@@ -21,11 +21,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <body>
                 <ThemeProvider
                     attribute="class"
-                    defaultTheme="system"
+                    defaultTheme="light"
                     enableSystem
                     disableTransitionOnChange
                 >
-                    {/* TODO: should <NavMenu> be in here?*/}
                     <NavMenu />
                     {children}
                 </ThemeProvider>
