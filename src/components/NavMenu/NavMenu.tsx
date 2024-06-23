@@ -10,7 +10,7 @@ import { Separator } from "@/components/ui/separator";
 
 const NavMenu = () => (
     <div>
-        <div className="bg-primary-foreground z-10 fixed w-screen flex justify-between py-2 px-8">
+        <div className="bg-primary-foreground z-10 w-screen flex justify-between py-2 px-8">
             <Sheet>
                 <SheetTrigger asChild>
                     <Button className="lg:hidden" variant="outline" size="icon">
