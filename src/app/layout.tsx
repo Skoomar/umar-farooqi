@@ -26,7 +26,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                     disableTransitionOnChange
                 >
                     <NavMenu />
-                    {children}
+                    <main id='content'>{children}</main>
                 </ThemeProvider>
             </body>
         </html>
