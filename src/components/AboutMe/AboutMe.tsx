@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-// TODO: Should this be in src/app instead of in components?
+// TODO: Should this be in src/app/page.tsx instead of having it in a separate file?
 const AboutMe = () => (
     <div className="bg-reservoir bg-cover h-full w-screen flex justify-center items-center">
         <div className="my-72">
