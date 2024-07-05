@@ -4,7 +4,7 @@ import Link from 'next/link';
 export function Posts({ posts }: { posts: Post[] }) {
     return (
         <ol>
-            {posts.map(({ slug, title, publishDate, tags }) => (
+            {posts.map(({ slug, title, publishDate }) => (
                 <li key={slug}>
                     <h2>
                         <Link href={`/${slug}`}>{title}</Link>
@@ -12,8 +12,6 @@ export function Posts({ posts }: { posts: Post[] }) {
                     <p>
                         <strong>Published:</strong>{' '}
                         {new Date(publishDate).toLocaleDateString()}{' '}
-                        <strong>Categories</strong>{' '}
-                        {tags.map((tag: string, i: number) => `${i ? ', ' : ''}${tag}`)}
                     </p>
                 </li>
             ))}

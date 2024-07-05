@@ -4,7 +4,6 @@ export interface Post {
     slug: string;
     title: string;
     publishDate: string;
-    tags: string[];
 }
 
 export async function getPosts(): Promise<Post[]> {
