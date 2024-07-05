@@ -25,3 +25,23 @@ export async function getPosts(): Promise<Post[]> {
 
     return posts;
 }
+
+export async function getPaginatedPosts({
+    page,
+    limit,
+}: {
+    page: number;
+    limit: number;
+}): Promise<{ posts: Post[]; total: number }> {
+    const allPosts = await getPosts();
+
+    // Get a subset of posts based on page & limit
+    const paginatedPosts = allPosts.slice((page - 1) * limit, page * limit);
+
+    return {
+        posts: paginatedPosts,
+        total: allPosts.length,
+    }
+}
+
+export const postsPerPage = 3 as const;
