@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Inter as FontSans } from 'next/font/google';
+// import { Inter as FontSans } from 'next/font/google';
+import { Merriweather as FontSans } from 'next/font/google';
 import "../input.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/theme-provider";
@@ -7,6 +8,7 @@ import NavMenu from "@/components/NavMenu/NavMenu";
 
 const fontSans = FontSans({
     subsets: ['latin'],
+    weight: "400",
     variable: "--font-sans",
 });
 
