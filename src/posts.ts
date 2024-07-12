@@ -3,6 +3,7 @@ import { readdir } from 'node:fs/promises';
 export interface Post {
     slug: string;
     title: string;
+    description: string;
     publishDate: string;
 }
 
