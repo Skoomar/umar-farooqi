@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 // import { Inter as FontSans } from 'next/font/google';
-import { Merriweather as FontSerif } from 'next/font/google';
+import { Poppins as FontSans } from 'next/font/google';
 import "../input.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/theme-provider";
 import NavMenu from "@/components/NavMenu/NavMenu";
 
-const fontSerif = FontSerif({
+const fontSans = FontSans({
     subsets: ['latin'],
     weight: "400",
-    variable: "--font-serif",
+    variable: "--font-sans",
 });
 
 export const metadata: Metadata = {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
-        <html lang="en" suppressHydrationWarning className={cn("min-h-screen bg-background font-serif antialiased", fontSerif.variable)}>
+        <html lang="en" suppressHydrationWarning className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
             <body>
                 <ThemeProvider
                     attribute="class"

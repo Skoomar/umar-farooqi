@@ -7,8 +7,8 @@ const BlogCard = ({slug, title, description, publishDate}: {slug: string, title:
     <Link  href={`/blog/${slug}`}>
         <Card className="w-60 m-2 hover:scale-105">
             <CardHeader>
-                <CardTitle>{title}</CardTitle>
                 <CardDescription>{DateTime.fromISO(publishDate).toLocaleString(DateTime.DATE_FULL)}</CardDescription>
+                <CardTitle>{title}</CardTitle>
             </CardHeader>
             <CardContent>
                 <p>{description}</p>
