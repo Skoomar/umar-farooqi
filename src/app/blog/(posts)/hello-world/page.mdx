@@ -1,15 +1,44 @@
 # Hello World
 
-Hi I'm Umar Farooqi, welcome to my blog
+Hi I'm Umar Farooqi, welcome to my blog.
 
-I wanted to try out some newer technologies so decided to rebuild my old un-loved personal website using Next.js.
-Could probably have used Vite instead (which I'll be trying on some other projects) but noticed Next.js has nice ways of
-integrating Markdown-based blog posts into your site so thought I'd try that too.
 
-At my job we have our own component library based on styled-components so have been very used to that. Thought I'd try
-out Tailwind as that seems to be hyped up. I also went through a load of different component libraries but always found
-them a bit too inflexible, requiring lots of config that seems to conflict with other things. That's when I discovered
-the concept of headless UI component libraries. So I've been using shadcn and loving it so far.
+I bought this domain about 7 years ago and just put up a very basic page with a game of Snake built in JS. After a
+year and a half working in a web development team I decided to rebuild my personal website using Next.js. I
+considered using something like Vite as this isn't a big project that's being served to loads of clients and
+requires optimised SEO, etc. I work a lot with existing Next.js 12 projects so am relatively comfortable with it but
+I'd never created a Next.js project from scratch. I also wanted to learn the new features included in Next.js 14 and
+see what it's like using the App Router.
+
+
+I used TypeScript for this project as a way to get more comfortable with it (and because IMO it should basically be the
+default unless you have some case where JS is more suited). At my job a lot of stuff is still in JS so I haven't
+developed the fluency with TS that comes from using it every day. I am part of a group of devs there who are pushing
+to migrate our JS repos to TS (among other tech improvements to bring us in line with the rest of the industry) but
+for now I'm using this as a way to learn it more deeply.
+
+
+For the styling I thought I'd try out Tailwind as it's widely used now and I didn't have any experience with it.
+I've mainly worked with styled-components as that's what I use at my job - I quite like it for using dynamic styling
+and not having to worry about having a million different stylesheets like before when I used SASS. Going to
+Tailwind feels like an in-between where I can have my components and its styles viewable in one place but avoid the
+bloatedness that comes with CSS-in-JS solutions. I can't say I really enjoy looking at the massive classNames that
+seem to now be everywhere in the code but I am finding it quite quick for prototyping and just getting styles done.
+
+
+I've also tried a fair few different component libraries. At my job we have our own component library based on
+styled-components so have been very used to that. Obviously I can't use that here so I gave a few different ones a
+try (as you see in the mess that is the commit history) - Material UI, Chakra, Mantine, etc. I kept getting annoyed
+at them for one reason or another. They were either too inflexible for custom styling, had convoluted methods for
+implementing certain things like dark mode, or straight up conflicted/didn't work nicely with Next.js. Some of
+that is probably me being inexperienced and impatient so I thought I'd pick one and deal with the issues.
+
+
+However, I did some more reading and discovered the concept of headless UI component libraries. I can take the
+implementation of the components' logic and then do what I want with their presentation (and modify the logic if I
+ever need to). Does mean I have to do more work to ensure a consistent design language across the components but
+this project is mostly for my own learning so I'm fine with that. I've been using [shadcn](https://ui.shadcn.com)
+and am loving it so far!
 
 export const metadata = {
     title: "Hello World",

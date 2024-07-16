@@ -5,10 +5,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 
 const BlogCard = ({slug, title, description, publishDate}: {slug: string, title: string, description: string, publishDate: string}) => (
     <Link  href={`/blog/${slug}`}>
-        <Card className="w-60 m-2">
+        <Card className="w-60 m-2 hover:scale-105">
             <CardHeader>
-                <CardTitle className="hover:underline">{title}</CardTitle>
-                <CardDescription>{publishDate}</CardDescription>
+                <CardTitle>{title}</CardTitle>
+                <CardDescription>{DateTime.fromISO(publishDate).toLocaleString(DateTime.DATE_FULL)}</CardDescription>
             </CardHeader>
             <CardContent>
                 <p>{description}</p>

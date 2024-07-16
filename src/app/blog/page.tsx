@@ -11,8 +11,10 @@ const BlogHome = async () => {
     return (
         <main>
             <h1 className="text-4xl text-center mt-5">Blog</h1>
-            <Posts posts={posts} />
-            <Pagination baseUrl="/blog" page={1} perPage={postsPerPage} total={total} />
+            <div className="px-6">
+                <Posts posts={posts} />
+                <Pagination baseUrl="/blog" page={1} perPage={postsPerPage} total={total} />
+            </div>
         </main>
     );
 };
