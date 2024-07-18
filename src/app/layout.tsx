@@ -19,7 +19,7 @@ const fontSerif = FontSerif({
 
 export const metadata: Metadata = {
     title: "Umar Farooqi",
-    description: "A website about a person called Umar Farooqi",
+    description: "Umar Farooqi - Software Engineer",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
