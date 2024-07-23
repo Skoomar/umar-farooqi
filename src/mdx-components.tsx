@@ -19,7 +19,7 @@ function Paragraph(props: ComponentPropsWithoutRef<'p'>) {
 
 function Hyperlink(props: ComponentPropsWithoutRef<'a'>) {
     return (
-        <a className="text-blue-800 font-bold hover:underline" {...props} />
+        <a className="text-blue-600 font-bold hover:underline" {...props} />
     );
 }
 
