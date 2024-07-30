@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { LuMenu } from "react-icons/lu";
 
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/ui/sheet";
 
-import LightDarkToggle from "@/components/NavMenu/LightDarkToggle";
-import { Button } from "@/components/ui/button";
+import LightDarkToggle from "@/app/components/NavMenu/LightDarkToggle";
+import { Button } from "@/ui/button";
 import Link from "next/link";
-import { Separator } from "@/components/ui/separator";
+import { Separator } from "@/ui/separator";
 
 const NavMenu = () => (
     <div>
@@ -19,7 +19,7 @@ const NavMenu = () => (
                 </SheetTrigger>
                 <SheetContent side="left">
                     <div className="flex flex-col gap-2 py-5">
-                        <Link href="/" className="text-lg">Home</Link>
+                        <Link href="/public" className="text-lg">Home</Link>
                         <Link href="/portfolio" className="text-lg">Portfolio</Link>
                         <Link href="/blog" className="text-lg">Blog</Link>
                         <Link href="/contact-me" className="text-lg">Contact Me</Link>
@@ -31,7 +31,7 @@ const NavMenu = () => (
             {/* TODO: probably a better way to do the margins between menu items/icons than setting margin between them */}
             <nav className="ml-auto mr-14 hidden lg:flex items-center gap-14 font-bold">
                 <Button asChild variant="ghost">
-                    <Link href="/">Home</Link>
+                    <Link href="/public">Home</Link>
                 </Button>
                 <Button asChild variant="ghost">
                     <Link href="/portfolio">Portfolio</Link>

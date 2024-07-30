@@ -3,7 +3,7 @@ import { Poppins as FontSans, Merriweather as FontSerif } from 'next/font/google
 import "../input.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/theme-provider";
-import NavMenu from "@/components/NavMenu/NavMenu";
+import NavMenu from "@/app/components/NavMenu/NavMenu";
 
 const fontSans = FontSans({
     subsets: ['latin'],
@@ -18,7 +18,10 @@ const fontSerif = FontSerif({
 });
 
 export const metadata: Metadata = {
-    title: "Umar Farooqi",
+    title: {
+        template: "%s | Umar Farooqi",
+        default: "Umar Farooqi",
+    },
     description: "Umar Farooqi - Software Engineer",
 };
 

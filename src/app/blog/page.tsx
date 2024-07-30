@@ -1,6 +1,6 @@
-import { getPaginatedPosts, postsPerPage } from '@/posts';
-import { Posts } from '@/components/blog/posts';
-import { Pagination } from '@/components/blog/pagination';
+import { getPaginatedPosts, postsPerPage } from '@/app/utils/get-posts';
+import { Posts } from '@/app/components/blog/post-body';
+import { Pagination } from '@/app/components/blog/pagination';
 
 const BlogHome = async () => {
     const { posts, total } = await getPaginatedPosts({
