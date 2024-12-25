@@ -16,7 +16,7 @@ export type Post = {
 // cache is a React 18 feature that allows you to cache a function for the lifetime of the request
 // so it'll only be run once per build even if it's called multiple times when rendering the page
 export const getPosts = cache(async () => {
-    const posts = await fs.readdir('./posts');
+    const posts = await fs.readdir('./posts/');
 
     return Promise.all(
         posts
@@ -37,7 +37,7 @@ export const getPosts = cache(async () => {
 
 export const getPost = async (slug: string) => {
     const posts = await getPosts();
-    return posts.find((post) => post.slug === slug);
+    return posts.find((post) => post!.slug === slug);
 }
 
 export default getPosts;
