@@ -1,23 +1,25 @@
-import Image from "next/image";
 import { LuMenu } from "react-icons/lu";
 
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 
 import LightDarkToggle from "@/components/NavMenu/LightDarkToggle";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Separator } from "@/components/ui/separator";
+import Logo from '@/components/NavMenu/Logo';
 
 const NavMenu = () => (
     <div>
-        <div className="bg-primary-foreground z-10 w-screen flex justify-between py-2 px-8">
+        <div className="z-10 w-screen flex justify-between py-2 px-8">
             <Sheet>
                 <SheetTrigger asChild>
                     <Button className="lg:hidden" variant="outline" size="icon">
                         <LuMenu className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-shadow " />
                     </Button>
                 </SheetTrigger>
-                <SheetContent side="left">
+                <SheetContent side="left" aria-describedby="Navigation Menu">
+                    <SheetHeader>
+                        <SheetTitle>Menu</SheetTitle>
+                    </SheetHeader>
                     <div className="flex flex-col gap-2 py-5">
                         <Link href="/" className="text-lg">Home</Link>
                         <Link href="/portfolio" className="text-lg">Portfolio</Link>
@@ -26,9 +28,7 @@ const NavMenu = () => (
                     </div>
                 </SheetContent>
             </Sheet>
-            {/* TODO: Make this logo work with dark mode IF i end up sticking with it */}
-            <Image src="/logo.svg" width={50} height={50} alt="Logo" />
-            {/* TODO: probably a better way to do the margins between menu items/icons than setting margin between them */}
+            <Logo />
             <nav className="ml-auto mr-14 hidden lg:flex items-center gap-14 font-bold">
                 <Button asChild variant="ghost">
                     <Link href="/">Home</Link>
@@ -45,7 +45,6 @@ const NavMenu = () => (
             </nav>
             <LightDarkToggle />
         </div>
-        <Separator />
     </div>
 );
 
