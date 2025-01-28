@@ -8,7 +8,7 @@ import Link from "next/link";
 import Logo from '@/components/NavMenu/Logo';
 
 const NavMenu = () => (
-    <nav className="sticky top-0 left-0 bg-white z-50 w-full py-2 px-8 flex justify-between shadow">
+    <nav className="sticky top-0 left-0 bg-white z-50 w-full py-2 px-4 flex justify-between shadow">
         <Sheet>
             <SheetTrigger asChild>
                 <Button className="shadow lg:hidden" variant="outline" size="icon">

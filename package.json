@@ -3,12 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "lint:write": "next lint --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "tailwind:build": "npx tailwind-cli build"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.5",
