@@ -8,6 +8,9 @@
 # Extras
 - rock climbing, guitar, racing etc abstract collage art for background
 - gradient background on dark mode
+- rotation of photos on homepage
+- Track page views: https://vercel.com/products/observability, https://web.dev/vitals/
+- make background image fixed so the content below scrolls up to "cover" it instead of being scrolled up itself
 
 # Done
 - how to change background, accents, etc globally

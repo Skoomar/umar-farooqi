@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Poppins as FontSans } from 'next/font/google';
+import { Montserrat as FontSans } from 'next/font/google';
 import "../input.css";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/theme-provider";
 import NavMenu from "@/components/NavMenu/NavMenu";
+import Footer from '@/components/Footer';
 
 const fontSans = FontSans({
     subsets: ['latin'],
@@ -29,8 +30,11 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => (
         enableSystem
         disableTransitionOnChange
     >
-        <NavMenu />
-        <main id="content">{children}</main>
+        <div className="flex flex-col overflow-x-clip">
+            <NavMenu />
+            <main id="content" className="flex flex-grow flex-col">{children}</main>
+            <Footer />
+        </div>
     </ThemeProvider>
     </body>
     </html>
