@@ -12,6 +12,7 @@
 - Track page views: https://vercel.com/products/observability, https://web.dev/vitals/
 - make background image fixed so the content below scrolls up to "cover" it instead of being scrolled up itself
 - sort tailwind classes automatically with prettier: https://tailwindcss.com/blog/automatic-class-sorting-with-prettier
+- Tailwind v4
 
 ## Done
 - how to change background, accents, etc globally

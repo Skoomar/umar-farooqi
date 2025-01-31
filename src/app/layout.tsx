@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat as FontSans } from 'next/font/google';
 import "../input.css";
 import { cn } from "@/lib/utils";
-import { ThemeProvider } from "@/theme-provider";
+import { ThemeProvider as NextThemesProvider } from "next-themes";
 import NavMenu from "@/components/NavMenu/NavMenu";
 import Footer from '@/components/Footer';
 
@@ -24,18 +24,17 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => (
     <html lang="en" suppressHydrationWarning
           className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
     <body>
-    <ThemeProvider
+    <NextThemesProvider
         attribute="class"
         defaultTheme="light"
-        enableSystem
-        disableTransitionOnChange
+        // disableTransitionOnChange
     >
         <div className="flex flex-col overflow-x-clip">
             <NavMenu />
             <main id="content" className="flex flex-grow flex-col">{children}</main>
             <Footer />
         </div>
-    </ThemeProvider>
+    </NextThemesProvider>
     </body>
     </html>
 );
