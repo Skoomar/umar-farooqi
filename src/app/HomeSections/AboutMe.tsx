@@ -1,4 +1,4 @@
-import { JSX } from 'react';
+import { ReactNode } from 'react';
 import { Separator } from '@/components/ui/separator';
 import { HeadingUnderline, Subsection } from '@/components/UtilComponents';
 
@@ -8,7 +8,7 @@ const ExperienceContent = ({ institution, tenure, separator = false, children }:
     institution: string,
     tenure: string,
     separator?: boolean,
-    children: JSX.Element
+    children: ReactNode
 }) => (
     <div className="mb-3">
         <div className="flex flex-row justify-between">
