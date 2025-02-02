@@ -21,6 +21,7 @@
 - where do you put ThemeProviders in a NextJS project? - just bodge it in the layout.tsx apparently
 - use styled-components or tailwind instead of this css shite
 - add a component library - ~~probs MUI~~ -went with Chakra instead- ACTUALLY WE GOING with shadcn now
+- need to set default styles for headings instead of defining them again and again
 
 # Notes
 - had to remove --turbopack because it seems to be preventing proper hot reload of tailwind styles

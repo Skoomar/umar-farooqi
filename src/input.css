@@ -78,6 +78,6 @@
 
 @layer utilities {
     .text-shadow {
-        text-shadow: 2px 3px 2px #333;
+        text-shadow: 2px 2px 2px #222;
     }
 }

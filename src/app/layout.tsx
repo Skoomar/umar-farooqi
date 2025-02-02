@@ -8,7 +8,6 @@ import Footer from '@/components/Footer';
 
 const fontSans = FontSans({
     subsets: ['latin'],
-    weight: "400",
     variable: "--font-sans",
 });
 

@@ -7,8 +7,10 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Logo from '@/components/NavMenu/Logo';
 
+
+// TODO: extend to allow page-specific links to be added through props
 const NavMenu = () => (
-    <nav className="sticky top-0 left-0 z-50 w-full py-2 px-4 flex justify-between shadow">
+    <nav className="sticky top-0 left-0 z-50 bg-background w-full py-2 px-4 flex justify-between shadow">
         <Sheet>
             <SheetTrigger asChild>
                 <Button className="shadow lg:hidden" variant="outline" size="icon">
