@@ -1,14 +1,20 @@
 import { JSX } from 'react';
 import { Separator } from '@/components/ui/separator';
 
+// TODO: add default heading and <ul> styles to Tailwind base rather than repeating them again and again
+const Subsection = ({ children }: { children: JSX.Element }) => <div className="mb-5">{children}</div>;
 const HeadingUnderline = () => <Separator className="mt-0.5 mb-2" />;
 
-
-const ExperienceContent = ({ institution, tenure, separator = false, children }: { institution: string, tenure: string, separator?: boolean, children: JSX.Element }) => (
+const ExperienceContent = ({ institution, tenure, separator = false, children }: {
+    institution: string,
+    tenure: string,
+    separator?: boolean,
+    children: JSX.Element
+}) => (
     <div className="mb-3">
         <div className="flex flex-row justify-between">
             <h4 className="text-md font-medium mb-0.5">{institution}</h4>
-            <p className="text-gray-600 text-xs italic my-auto">{tenure}</p>
+            <p className="text-muted-foreground text-xs italic my-auto">{tenure}</p>
         </div>
         <div className="text-sm">
             {children}
@@ -18,15 +24,15 @@ const ExperienceContent = ({ institution, tenure, separator = false, children }:
 );
 
 const AboutMe = () => (
-    <section className="py-8 px-8 shadow">
-        <div className="mb-5">
+    <section className="pt-8 pb-3 px-8 shadow">
+        <Subsection>
             <h2 className="text-2xl font-semibold">About Me</h2>
             <HeadingUnderline />
             <p>I&#39;m a software engineer currently working at Capital One to develop our web apps and
                 enhance
                 experience for both users and developers.</p>
-        </div>
-        <div className="mb-5">
+        </Subsection>
+        <Subsection>
             <h3 className="text-xl font-semibold">Skills & Experience</h3>
             <HeadingUnderline />
             <h4 className="text-lg font-medium">Languages & Tools:</h4>
@@ -52,8 +58,8 @@ const AboutMe = () => (
                 <li>Jenkins</li>
                 <li>Git</li>
             </ul>
-        </div>
-        <div className="mb-5">
+        </Subsection>
+        <Subsection>
             <h3 className="text-xl font-semibold">Work History</h3>
             <HeadingUnderline />
             <ExperienceContent institution="Capital One" tenure="Sept 2021 - Present" separator>
@@ -89,14 +95,24 @@ const AboutMe = () => (
                     </p>
                 </div>
             </ExperienceContent>
-        </div>
-        <div>
+        </Subsection>
+        <Subsection>
             <h3 className="text-xl font-semibold">Education</h3>
             <HeadingUnderline />
             <ExperienceContent institution="University of York" tenure="2017 - 2021">
                 <p>BEng Computer Science with Year in Industry</p>
             </ExperienceContent>
-        </div>
+        </Subsection>
+        <Subsection>
+            <h3 className="text-xl font-semibold">Hobbies & Interests</h3>
+            <HeadingUnderline />
+            <ul className="text-sm pl-4 list-disc">
+                <li>Rock Climbing</li>
+                <li>Music - listening to music and playing guitar/bass/drums</li>
+                <li>Motorsport - viewing and taking part in real & virtual racing</li>
+                <li>Cats - too many to count currently in the house</li>
+            </ul>
+        </Subsection>
     </section>
 );
 

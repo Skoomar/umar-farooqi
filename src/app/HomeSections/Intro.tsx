@@ -1,4 +1,6 @@
 import Image, { getImageProps } from 'next/image';
+import { LuMail, LuLinkedin, LuGithub } from 'react-icons/lu';
+import Link from 'next/link';
 
 const getBackgroundImage = (srcSet = '') => {
     const imageSet = srcSet
@@ -25,11 +27,11 @@ const Intro = () => {
                 <h1 className="text-white font-semibold text-4xl text-center text-shadow mb-2">UMAR FAROOQI</h1>
                 <div className="text-white font-semibold text-2xl text-center text-shadow">Software Engineer</div>
                 {/* TODO: add icons for these */}
-                <div className="mt-48">
+                <div className="mt-48 px-8">
                     <div className="text-white flex flex-row justify-between">
-                        <div>Email</div>
-                        <div>Linkedin</div>
-                        <div>GitHub</div>
+                        <Link href="mailto:umar_farooqi@hotmail.co.uk"><LuMail size={30} /></Link>
+                        <Link href="https://www.linkedin.com/in/umar-farooqi-09279a184?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BzuzGYgYEQQGU1pLjfJTt4w%3D%3D"><LuLinkedin size={30} /></Link>
+                        <Link href="https://github.com/Skoomar"><LuGithub size={30} /></Link>
                     </div>
                 </div>
             </div>

@@ -14,7 +14,7 @@ const NavMenu = () => (
         <Sheet>
             <SheetTrigger asChild>
                 <Button className="shadow lg:hidden" variant="outline" size="icon">
-                    <LuMenu className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-shadow " />
+                    <LuMenu className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-shadow" />
                 </Button>
             </SheetTrigger>
             <SheetContent side="left" aria-describedby="Navigation Menu">
