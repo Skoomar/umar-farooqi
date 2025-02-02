@@ -1,9 +1,8 @@
 import { JSX } from 'react';
 import { Separator } from '@/components/ui/separator';
+import { HeadingUnderline, Subsection } from '@/components/UtilComponents';
 
 // TODO: add default heading and <ul> styles to Tailwind base rather than repeating them again and again
-const Subsection = ({ children }: { children: JSX.Element }) => <div className="mb-5">{children}</div>;
-const HeadingUnderline = () => <Separator className="mt-0.5 mb-2" />;
 
 const ExperienceContent = ({ institution, tenure, separator = false, children }: {
     institution: string,

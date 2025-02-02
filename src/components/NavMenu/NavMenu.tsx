@@ -7,13 +7,28 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Logo from '@/components/NavMenu/Logo';
 
+const links = [
+    {
+        href: '/',
+        label: 'Home'
+    },
+    {
+        href: '/projects',
+        label: 'Projects',
+    },
+    {
+        href: '/blog',
+        label: 'Blog'
+    },
+];
+
 
 // TODO: extend to allow page-specific links to be added through props
 const NavMenu = () => (
     <nav className="sticky top-0 left-0 z-50 bg-background w-full py-2 px-4 flex justify-between shadow">
         <Sheet>
             <SheetTrigger asChild>
-                <Button className="shadow lg:hidden" variant="outline" size="icon">
+                <Button variant="outline" size="icon" className="border-foreground shadow lg:hidden">
                     <LuMenu className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-shadow" />
                 </Button>
             </SheetTrigger>
@@ -23,27 +38,25 @@ const NavMenu = () => (
                     <SheetDescription>Select a page</SheetDescription>
                 </SheetHeader>
                 <div className="flex flex-col gap-2 py-5">
-                    <Link href="/" className="text-lg">Home</Link>
-                    <Link href="/portfolio" className="text-lg">Portfolio</Link>
-                    <Link href="/blog" className="text-lg">Blog</Link>
-                    <Link href="/contact-me" className="text-lg">Contact Me</Link>
+                    {
+                        links.map((link) => (
+                            <Link key={link.label.toLowerCase()} href={link.href}
+                                  className="text-lg">{link.label}</Link>)
+                        )
+                    }
                 </div>
             </SheetContent>
         </Sheet>
         <Logo />
         <div className="ml-auto mr-14 hidden lg:flex items-center gap-14 font-bold">
-            <Button asChild variant="ghost">
-                <Link href="/">Home</Link>
-            </Button>
-            <Button asChild variant="ghost">
-                <Link href="/portfolio">Portfolio</Link>
-            </Button>
-            <Button asChild variant="ghost">
-                <Link href="/blog">Blog</Link>
-            </Button>
-            <Button asChild variant="ghost">
-                <Link href="/contact-me">Contact Me</Link>
-            </Button>
+            {
+                links.map(link => (
+                        <Button key={link.label.toLowerCase()} asChild variant="ghost">
+                            <Link href={link.href}>{link.label}</Link>
+                        </Button>
+                    )
+                )
+            }
         </div>
         <LightDarkToggle />
     </nav>
