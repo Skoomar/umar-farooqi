@@ -23,16 +23,16 @@ const ExperienceContent = ({ institution, tenure, separator = false, children }:
 );
 
 const AboutMe = () => (
-    <section className="pt-8 pb-3 px-8 shadow">
+    <section className="pt-8 pb-3 px-8 lg:px-[10%] shadow">
         <Subsection>
-            <h2 className="text-2xl font-semibold">About Me</h2>
+            <h2 className="text-2xl font-semibold max-md:text-center">About Me</h2>
             <HeadingUnderline />
             <p>I&#39;m a software engineer currently working at Capital One to develop our web apps and
                 enhance
                 experience for both users and developers.</p>
         </Subsection>
         <Subsection>
-            <h3 className="text-xl font-semibold">Skills & Experience</h3>
+            <h3 className="text-xl font-semibold max-md:text-center">Skills & Experience</h3>
             <HeadingUnderline />
             <h4 className="text-lg font-medium">Languages & Tools:</h4>
             <ul className="pl-7 list-disc mb-3">
@@ -59,7 +59,7 @@ const AboutMe = () => (
             </ul>
         </Subsection>
         <Subsection>
-            <h3 className="text-xl font-semibold">Work History</h3>
+            <h3 className="text-xl font-semibold max-md:text-center">Work History</h3>
             <HeadingUnderline />
             <ExperienceContent institution="Capital One" tenure="Sept 2021 - Present" separator>
                 <div>
@@ -96,16 +96,16 @@ const AboutMe = () => (
             </ExperienceContent>
         </Subsection>
         <Subsection>
-            <h3 className="text-xl font-semibold">Education</h3>
+            <h3 className="text-xl font-semibold max-md:text-center">Education</h3>
             <HeadingUnderline />
             <ExperienceContent institution="University of York" tenure="2017 - 2021">
                 <p>BEng Computer Science with Year in Industry</p>
             </ExperienceContent>
         </Subsection>
         <Subsection>
-            <h3 className="text-xl font-semibold">Hobbies & Interests</h3>
+            <h3 className="text-xl font-semibold max-md:text-center">Hobbies & Interests</h3>
             <HeadingUnderline />
-            <ul className="text-sm pl-4 list-disc">
+            <ul className="text-sm pl-3 list-disc">
                 <li>Rock Climbing</li>
                 <li>Music - listening to music and playing guitar/bass/drums</li>
                 <li>Motorsport - viewing and taking part in real & virtual racing</li>

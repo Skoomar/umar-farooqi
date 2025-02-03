@@ -25,7 +25,7 @@ const links = [
 
 // TODO: extend to allow page-specific links to be added through props
 const NavMenu = () => (
-    <nav className="sticky top-0 left-0 z-50 bg-background w-full py-2 px-4 flex justify-between shadow">
+    <nav className="sticky top-0 left-0 z-50 bg-background w-full py-2 px-4 flex justify-between shadow lg:px-[5%]">
         <Sheet>
             <SheetTrigger asChild>
                 <Button variant="outline" size="icon" className="border-foreground shadow lg:hidden">
