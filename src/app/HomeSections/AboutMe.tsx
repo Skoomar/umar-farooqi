@@ -4,17 +4,19 @@ import { HeadingUnderline, Subsection } from '@/components/UtilComponents';
 
 // TODO: add default heading and <ul> styles to Tailwind base rather than repeating them again and again
 
-const ExperienceContent = ({ institution, tenure, separator = false, children }: {
+const ExperienceContent = ({ institution, tenure, subtitle, separator = false, children }: {
     institution: string,
     tenure: string,
+    subtitle?: string,
     separator?: boolean,
     children: ReactNode
 }) => (
     <div className="mb-3">
         <div className="flex flex-row justify-between">
-            <h4 className="text-md font-medium mb-0.5">{institution}</h4>
+            <h4 className="text-lg font-medium mb-0.5">{institution}</h4>
             <p className="text-muted-foreground text-xs italic my-auto">{tenure}</p>
         </div>
+        {subtitle && (<div className="italic mb-1">{subtitle}</div>)}
         <div className="text-sm">
             {children}
         </div>
@@ -98,8 +100,10 @@ const AboutMe = () => (
         <Subsection>
             <h3 className="text-xl font-semibold max-md:text-center">Education</h3>
             <HeadingUnderline />
-            <ExperienceContent institution="University of York" tenure="2017 - 2021">
-                <p>BEng Computer Science with Year in Industry</p>
+            <ExperienceContent institution="University of York" tenure="2017 - 2021"
+                               subtitle="BEng Computer Science with Year in Industry">
+                <p>I wrote my final-year dissertation on the efficacy of Recurrent Neural Networks in categorising
+                    activities measured by wearable devices.</p>
             </ExperienceContent>
         </Subsection>
         <Subsection>

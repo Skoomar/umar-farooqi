@@ -47,7 +47,7 @@ const NavMenu = () => (
                 </div>
             </SheetContent>
         </Sheet>
-        <Logo />
+        <Link href="/"><Logo /></Link>
         <div className="ml-auto mr-14 hidden lg:flex items-center gap-14 font-bold">
             {
                 links.map(link => (
