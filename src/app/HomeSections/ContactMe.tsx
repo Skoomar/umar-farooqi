@@ -6,7 +6,7 @@ const ContactMe = () => (
         <HeadingUnderline />
         <p className="mt-4"><b>Email:</b> umar_farooqi@hotmail.co.uk</p>
         <br />
-        <p>I&#39;m open to freelance work - don&#39;t hesitate to get in touch!</p>
+        {/*<p>I&#39;m open to freelance work - don&#39;t hesitate to get in touch!</p>*/}
     </section>
 );
 
