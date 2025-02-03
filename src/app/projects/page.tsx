@@ -11,7 +11,7 @@ const Projects = () => (
                 volunteering for the
                 rescue I&#39;ve been developing a website for them to display cats currently for adoption.</p>
             <Link href="https://mansfieldcatrescue.co.uk/"
-                     className="text-blue-800 underline visited:accent-purple-800">mansfieldcatrescue.co.uk</Link>
+                     className="text-blue-600 underline visited:accent-purple-600">mansfieldcatrescue.co.uk</Link>
             <p className="text-sm">
                 (Still under construction but you can see the code in my GitHub if you&#39;re interested)
             </p>

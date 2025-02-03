@@ -13,10 +13,10 @@ const ExperienceContent = ({ institution, tenure, subtitle, separator = false, c
 }) => (
     <div className="mb-3">
         <div className="flex flex-row justify-between">
-            <h4 className="text-lg font-medium mb-0.5">{institution}</h4>
+            <h5 className="font-medium mb-0.5">{institution}</h5>
             <p className="text-muted-foreground text-xs italic my-auto">{tenure}</p>
         </div>
-        {subtitle && (<div className="italic mb-1">{subtitle}</div>)}
+        {subtitle && (<div className="text-sm italic mb-1">{subtitle}</div>)}
         <div className="text-sm">
             {children}
         </div>
@@ -25,18 +25,18 @@ const ExperienceContent = ({ institution, tenure, subtitle, separator = false, c
 );
 
 const AboutMe = () => (
-    <section className="pt-8 pb-3 px-8 lg:px-[10%] shadow">
+    <section className="pt-8 pb-3 px-8 md:px-[10%] shadow">
         <Subsection>
-            <h2 className="text-2xl font-semibold max-md:text-center">About Me</h2>
+            <h2 className="text-2xl font-semibold max-lg:text-center">About Me</h2>
             <HeadingUnderline />
             <p>I&#39;m a software engineer currently working at Capital One to develop our web apps and
                 enhance
                 experience for both users and developers.</p>
         </Subsection>
         <Subsection>
-            <h3 className="text-xl font-semibold max-md:text-center">Skills & Experience</h3>
+            <h3 className="text-xl font-semibold max-lg:text-center">Skills & Experience</h3>
             <HeadingUnderline />
-            <h4 className="text-lg font-medium">Languages & Tools:</h4>
+            <h4 className="text-lg font-medium max-lg:text-center">Languages & Tools</h4>
             <ul className="pl-7 list-disc mb-3">
                 <li>JavaScript/TypeScript</li>
                 <ul className="pl-7 list-disc">
@@ -59,9 +59,7 @@ const AboutMe = () => (
                 <li>Jenkins</li>
                 <li>Git</li>
             </ul>
-        </Subsection>
-        <Subsection>
-            <h3 className="text-xl font-semibold max-md:text-center">Work History</h3>
+            <h4 className="text-lg font-medium max-lg:text-center">Work History</h4>
             <HeadingUnderline />
             <ExperienceContent institution="Capital One" tenure="Sept 2021 - Present" separator>
                 <div>
@@ -98,7 +96,7 @@ const AboutMe = () => (
             </ExperienceContent>
         </Subsection>
         <Subsection>
-            <h3 className="text-xl font-semibold max-md:text-center">Education</h3>
+            <h3 className="text-xl font-semibold max-lg:text-center">Education</h3>
             <HeadingUnderline />
             <ExperienceContent institution="University of York" tenure="2017 - 2021"
                                subtitle="BEng Computer Science with Year in Industry">
@@ -107,9 +105,9 @@ const AboutMe = () => (
             </ExperienceContent>
         </Subsection>
         <Subsection>
-            <h3 className="text-xl font-semibold max-md:text-center">Hobbies & Interests</h3>
+            <h3 className="text-xl font-semibold max-lg:text-center">Hobbies & Interests</h3>
             <HeadingUnderline />
-            <ul className="text-sm pl-3 list-disc">
+            <ul className="pl-3 list-disc">
                 <li>Rock Climbing</li>
                 <li>Music - listening to music and playing guitar/bass/drums</li>
                 <li>Motorsport - viewing and taking part in real & virtual racing</li>
