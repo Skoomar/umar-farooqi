@@ -12,7 +12,7 @@ const MobileSidebar = ({ links }: { links: { href: string, label: string }[] }) 
     return (
         <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-                <Button variant="outline" size="icon" className="border-foreground shadow lg:hidden">
+                <Button variant="outline" size="icon" className="border-foreground dark:bg-secondary shadow lg:hidden">
                     <LuMenu className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-shadow" />
                 </Button>
             </SheetTrigger>
