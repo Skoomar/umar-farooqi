@@ -12,10 +12,10 @@ const Projects = () => (
                 rescue I&#39;ve been developing a website for them to display cats currently for adoption.</p>
             <Link href="https://mansfieldcatrescue.co.uk/"
                      className="text-blue-600 underline visited:accent-purple-600">mansfieldcatrescue.co.uk</Link>
-            <p className="text-sm">
+            <p className="text-xs">
                 (Still under construction but you can see the code in my GitHub if you&#39;re interested)
             </p>
-            <p className="mt-0.5">For this project I&#39;m using React, Tailwind, Next.js - utilising the server-side
+            <p className="mt-1">For this project I&#39;m using React, Tailwind, Next.js - utilising the server-side
                 rendering features of Next.js to fetch and cache cat data from a GraphQL API. This API is hosted by Pawlytics - the
                 service the rescue
                 uses to catalogue and document their cats.

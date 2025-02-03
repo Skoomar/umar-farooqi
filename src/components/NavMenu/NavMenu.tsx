@@ -1,11 +1,8 @@
-import { LuMenu } from "react-icons/lu";
-
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
-
 import LightDarkToggle from "@/components/NavMenu/LightDarkToggle";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Logo from '@/components/NavMenu/Logo';
+import MobileSidebar from '@/components/NavMenu/MobileSidebar';
 
 const links = [
     {
@@ -22,31 +19,10 @@ const links = [
     },
 ];
 
-
 // TODO: extend to allow page-specific links to be added through props
 const NavMenu = () => (
     <nav className="sticky top-0 left-0 z-50 bg-background w-full py-2 px-4 flex justify-between shadow lg:px-[5%]">
-        <Sheet>
-            <SheetTrigger asChild>
-                <Button variant="outline" size="icon" className="border-foreground shadow lg:hidden">
-                    <LuMenu className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-shadow" />
-                </Button>
-            </SheetTrigger>
-            <SheetContent side="left" aria-describedby="Navigation Menu">
-                <SheetHeader>
-                    <SheetTitle>Menu</SheetTitle>
-                    <SheetDescription>Select a page</SheetDescription>
-                </SheetHeader>
-                <div className="flex flex-col gap-2 py-5">
-                    {
-                        links.map((link) => (
-                            <Link key={link.label.toLowerCase()} href={link.href}
-                                  className="text-lg">{link.label}</Link>)
-                        )
-                    }
-                </div>
-            </SheetContent>
-        </Sheet>
+        <MobileSidebar links={links} />
         <Link href="/"><Logo /></Link>
         <div className="ml-auto mr-14 hidden lg:flex items-center gap-14 font-bold">
             {
