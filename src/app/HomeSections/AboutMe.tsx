@@ -110,7 +110,7 @@ const AboutMe = () => (
             <ul className="pl-3 list-disc">
                 <li>Software Development (obviously!)</li>
                 <li>Rock Climbing</li>
-                <li>Music - listening to music and playing guitar/bass/drums</li>
+                <li>Music - playing guitar/bass/drums</li>
                 <li>Motorsport - viewing and taking part in real & virtual racing</li>
                 <li>Cats - too many to count currently in the house</li>
             </ul>
