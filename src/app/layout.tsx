@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from '@vercel/analytics/next';
 import { Montserrat as FontSans } from 'next/font/google';
 import "../input.css";
 import { cn } from "@/lib/utils";
@@ -30,7 +31,10 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => (
     >
         <div className="flex flex-col overflow-x-clip">
             <NavMenu />
-            <main id="content" className="flex flex-grow flex-col">{children}</main>
+            <main id="content" className="flex flex-grow flex-col">
+                {children}
+                <Analytics />
+            </main>
             <Footer />
         </div>
     </NextThemesProvider>
