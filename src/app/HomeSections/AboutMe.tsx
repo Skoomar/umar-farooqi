@@ -108,6 +108,7 @@ const AboutMe = () => (
             <h3 className="text-xl font-semibold max-lg:text-center">Hobbies & Interests</h3>
             <HeadingUnderline />
             <ul className="pl-3 list-disc">
+                <li>Software Development (obviously!)</li>
                 <li>Rock Climbing</li>
                 <li>Music - listening to music and playing guitar/bass/drums</li>
                 <li>Motorsport - viewing and taking part in real & virtual racing</li>
