@@ -54,6 +54,7 @@ const AboutMe = () => (
                 <ul className="pl-7 list-disc">
                     <li>Lambda</li>
                     <li>CloudFront</li>
+                    <li>Route 53</li>
                     <li>EC2</li>
                 </ul>
                 <li>Jenkins</li>
@@ -100,7 +101,7 @@ const AboutMe = () => (
             <HeadingUnderline />
             <ExperienceContent institution="University of York" tenure="2017 - 2021"
                                subtitle="BEng Computer Science with Year in Industry">
-                <p>I wrote my final-year dissertation on the efficacy of Recurrent Neural Networks in categorising
+                <p>I wrote my final-year dissertation on the efficacy of transfer learning neural networks for categorising
                     activities measured by wearable devices.</p>
             </ExperienceContent>
         </Subsection>
