@@ -7,7 +7,7 @@ export const Subsection = ({ children }: { children: ReactNode }) => <div classN
 export const HeadingUnderline = () => <Separator className="mt-0.5 mb-2" />;
 
 export const MediaLink = ({ href, Icon, overlay = false }: { href: string, Icon: IconType, overlay?: boolean }) => (
-    <div className={`size-[40px] py-1 ${overlay && "bg-black bg-opacity-50 rounded-lg"}`}>
+    <div className={`size-[40px] py-1.5 ${overlay && "bg-black bg-opacity-40 rounded-lg"}`}>
         <Link href={href} target="_blank" className="hover:text-emerald-300">
             <Icon size={30} className="mx-auto align-middle" />
         </Link>

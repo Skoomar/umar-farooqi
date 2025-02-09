@@ -13,7 +13,7 @@ const ExperienceContent = ({ institution, tenure, subtitle, separator = false, c
 }) => (
     <div className="mb-3">
         <div className="flex flex-row justify-between">
-            <h5 className="font-medium mb-0.5">{institution}</h5>
+            <h5 className="font-medium mb-0.5 text-secondary-foreground">{institution}</h5>
             <p className="text-muted-foreground text-xs italic my-auto">{tenure}</p>
         </div>
         {subtitle && (<div className="text-sm italic mb-1">{subtitle}</div>)}
@@ -34,32 +34,52 @@ const AboutMe = () => (
                 experience for both users and developers.</p>
         </Subsection>
         <Subsection>
-            <h3 className="text-xl font-semibold max-lg:text-center">Skills & Experience</h3>
-            <HeadingUnderline />
-            <h4 className="text-lg font-medium max-lg:text-center">Languages & Tools</h4>
-            <ul className="pl-7 list-disc mb-3">
-                <li>JavaScript/TypeScript</li>
-                <ul className="pl-7 list-disc">
-                    <li>React.js</li>
-                    <li>Next.js</li>
+            <div className="mb-5">
+                <h3 className="text-xl font-semibold max-lg:text-center">Skills & Experience</h3>
+                <HeadingUnderline />
+                <h4 className="text-lg font-medium max-lg:text-center mb-1">Languages & Frameworks</h4>
+                <h5 className="font-medium text-secondary-foreground">Currently using professionally</h5>
+                <ul className="pl-7 list-disc mb-3">
+                    <li>JavaScript/TypeScript</li>
+                    <ul className="pl-7 list-disc">
+                        <li>React.js</li>
+                        <li>Next.js</li>
+                        <li>Vite</li>
+                        <li>Jest/Vitest</li>
+                    </ul>
+                    <li>CSS</li>
+                    <ul className="pl-7 list-disc">
+                        <li>styled-components</li>
+                        <li>Tailwind</li>
+                    </ul>
+                    <li>Cypress</li>
+                    <li>Playwright</li>
                 </ul>
-                <li>CSS</li>
-                <ul className="pl-7 list-disc">
-                    <li>styled-components</li>
-                    <li>Tailwind</li>
+                <h5 className="font-medium text-secondary-foreground">Have used professionally/semi-regularly</h5>
+                <ul className="pl-7 list-disc mb-3">
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>Fortran</li>
                 </ul>
-                <li>Python</li>
-                <li>Java</li>
-                <li>AWS</li>
+                <h4 className="text-lg font-medium max-lg:text-center">Tools & Infrastructure</h4>
                 <ul className="pl-7 list-disc">
-                    <li>Lambda</li>
-                    <li>CloudFront</li>
-                    <li>Route 53</li>
-                    <li>EC2</li>
+                    <li>AWS</li>
+                    <ul className="pl-7 list-disc">
+                        <li>Lambda</li>
+                        <li>CloudFront</li>
+                        <li>Route 53</li>
+                        <li>EC2</li>
+                    </ul>
+                    <li>Jenkins</li>
+                    <li>Git</li>
+                    <li>Docker</li>
+                    <li>Logging & Monitoring</li>
+                    <ul className="pl-7 list-disc">
+                        <li>Logz.io</li>
+                        <li>NewRelic</li>
+                    </ul>
                 </ul>
-                <li>Jenkins</li>
-                <li>Git</li>
-            </ul>
+            </div>
             <h4 className="text-lg font-medium max-lg:text-center">Work History</h4>
             <HeadingUnderline />
             <ExperienceContent institution="Capital One" tenure="Sept 2021 - Present" separator>
@@ -74,7 +94,7 @@ const AboutMe = () => (
                     <p>Main technologies used
                         in my current role are JavaScript/TypeScript, React, Next.js, CSS (styled-components), AWS
                         (Lambda,
-                        CloudFront, S3), Jenkins for CI/CD, Git + GitHub.
+                        CloudFront, S3), Jenkins for CI/CD, Git + GitHub, Cypress.
                     </p>
                 </div>
             </ExperienceContent>
@@ -101,8 +121,9 @@ const AboutMe = () => (
             <HeadingUnderline />
             <ExperienceContent institution="University of York" tenure="2017 - 2021"
                                subtitle="BEng Computer Science with Year in Industry">
-                <p>I wrote my final-year dissertation on the efficacy of transfer learning neural networks for categorising
-                    activities measured by wearable devices.</p>
+                <p>I wrote my final-year dissertation on the efficacy of transfer learning neural networks for
+                    categorising physical activities measured by wearable devices (smartphones and watches). Used Python
+                    with Tensorflow to build, train, and test this model on the WISDM dataset.</p>
             </ExperienceContent>
         </Subsection>
         <Subsection>
