@@ -1,7 +1,7 @@
 const Logo = () => {
 
     return (
-        <div className="mt-0.5 fill-black dark:fill-white">
+        <div className="mt-0.5 fill-black dark:fill-white hover:fill-emerald-300">
             <svg width="50" height="36" viewBox="0 0 196 140" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_66_2)">
                     <path

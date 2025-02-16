@@ -1,4 +1,5 @@
 # To Do
+- Open Graph metadata updates for more SEO
 - Payload CMS Blog
 - full page scrolling
 - rock climbing, guitar, racing etc abstract collage art for background
@@ -7,7 +8,9 @@
 - Track page views: https://vercel.com/products/observability, https://web.dev/vitals/
 - make background image fixed so the content below scrolls up to "cover" it instead of being scrolled up itself
 - sort tailwind classes automatically with prettier: https://tailwindcss.com/blog/automatic-class-sorting-with-prettier
+  - or this which is less aggressive than prettier: https://plugins.jetbrains.com/plugin/13376-tailwind-formatter
 - Tailwind v4
+- use a cookie to store light/dark mode rather than using the supressHydrationWarning workaround
 
 ## Done
 - how to change background, accents, etc globally

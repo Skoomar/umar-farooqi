@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 import { Separator } from '@/components/ui/separator';
-import { HeadingUnderline, Subsection } from '@/components/UtilComponents';
+import { HeadingUnderline, StyledExternalLink, Subsection } from '@/components/UtilComponents';
 
 // TODO: add default heading and <ul> styles to Tailwind base rather than repeating them again and again
 
@@ -25,13 +25,17 @@ const ExperienceContent = ({ institution, tenure, subtitle, separator = false, c
 );
 
 const AboutMe = () => (
-    <section className="pt-8 pb-3 px-8 md:px-[10%] shadow">
+    <section className="pt-8 pb-3 px-8 md:px-[10%]">
         <Subsection>
             <h2 className="text-2xl font-semibold max-lg:text-center">About Me</h2>
             <HeadingUnderline />
-            <p>I&#39;m a software engineer currently working at Capital One to develop our web apps and
+            <p>
+                I&#39;m a software engineer currently working at Capital One to develop our web apps and
                 enhance
-                experience for both users and developers.</p>
+                experience for both users and developers.
+            </p>
+            <br />
+            <StyledExternalLink href="/umar_farooqi_cv.pdf">See my CV</StyledExternalLink>
         </Subsection>
         <Subsection>
             <div className="mb-5">
@@ -89,6 +93,12 @@ const AboutMe = () => (
                         services,
                         DevOps, and web applications. Settled into a web team at the end of the rotations and have been
                         working since then on Capital One&#39;s customer acquisition web journeys.
+                    </p>
+                    <br />
+                    <p>
+                        Worked on a range of projects such as creating an ASOS-branded version of the QuickCheck journey
+                        and migrating on-prem services to the AWS cloud. Drove improvements to developer experience
+                        through things such as migrating apps to TypeScript and enhancing our documentation.
                     </p>
                     <br />
                     <p>Main technologies used

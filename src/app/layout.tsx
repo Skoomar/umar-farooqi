@@ -29,9 +29,9 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => (
         defaultTheme="light"
         // disableTransitionOnChange
     >
-        <div className="flex flex-col overflow-x-clip">
+        <div className="flex flex-col min-h-screen overflow-x-clip">
             <NavMenu />
-            <main id="content" className="flex flex-grow flex-col">
+            <main id="content" className="flex-auto">
                 {children}
                 <Analytics />
             </main>
