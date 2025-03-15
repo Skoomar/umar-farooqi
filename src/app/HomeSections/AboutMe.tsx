@@ -46,6 +46,7 @@ const AboutMe = () => (
                 <ul className="pl-7 list-disc mb-3">
                     <li>JavaScript/TypeScript</li>
                     <ul className="pl-7 list-disc">
+                        <li>Node.js</li>
                         <li>React.js</li>
                         <li>Next.js</li>
                         <li>Vite</li>
@@ -102,7 +103,7 @@ const AboutMe = () => (
                     </p>
                     <br />
                     <p>Main technologies used
-                        in my current role are JavaScript/TypeScript, React, Next.js, CSS (styled-components), AWS
+                        in my current role are JavaScript/TypeScript, Node.js, React, Next.js, CSS (styled-components), AWS
                         (Lambda,
                         CloudFront, S3), Jenkins for CI/CD, Git + GitHub, Cypress.
                     </p>
